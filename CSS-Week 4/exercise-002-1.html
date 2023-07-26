@@ -4,30 +4,42 @@
 <title>Page Title</title>
 <style>
     header h1 {
-        background-color: yellow;
+        background-color: #FFD706;
         text-align: center;
-        color: blue;
+        color: #2408FD;
     }
     header h2 {
         text-align: center;
-        /* color: pink; */
+        color: #DDA0DD;
     }
     .reporter {
         display: grid;
         color: cornflowerblue;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
         
     }
     
      img {
-        border:3px solid steelblue;
+        border:3px solid #4480B3;
+        grid-row-start: 1;
+        grid-column-start: 3;
+        grid-row-end: 3;
+        grid-column-end: 3;
+        justify-content : end;
+        
         
         
     }
      time {
         color: deeppink;
         font-style: italic;
-        margin-top: 20px;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-row-end: 3;
+        grid-column-end: 3;
+        
      }
 
      article {
@@ -36,11 +48,43 @@
      }
 
      footer {
-        background-color: yellow;
+        background-color: #FFD706;
         text-align: center;
-        color: blue;
+        color: #2408FD;
     }
-     
+
+    .luckd {
+        width: 270px
+    }
+
+  
+        progress {
+        position: relative;
+        border: 1px solid gray;
+        margin-top: 20px;
+        
+        }
+
+        progress[value]::-webkit-progress-bar {background-color: #fff;}
+        progress[value]::-webkit-progress-value {background-color: #89B3F6;}
+        
+        
+
+        
+       
+
+      
+
+        
+        aside {
+            position: absolute;
+            right: 0;
+            margin-right: 8px;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+            font-size: 40px;
+            width: 250px;
+        }
 </style>
 
 </head>
